@@ -94,7 +94,7 @@ body {
 }
 
 .cv {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .cv h2 {
@@ -116,6 +116,90 @@ body {
 
 .cv li {
   margin-bottom: 10px;
+}
+
+.work-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+  margin: 60px 0 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px 50px;
+  flex: 1;
+  margin-top: -120px;
+}
+
+.artwork {
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.artwork img {
+  width: 100%;
+  display: block;
+}
+
+.artwork figcaption {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.artwork:hover figcaption {
+  opacity: 1;
+}
+
+.artwork figcaption span {
+  display: block;
+  font-size: 12px;
+}
+
+.artwork h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.artwork p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.artwork-1 {
+  width: 130%;
+  margin-left: -60px;
+  margin-top: -20px;
+}
+
+.artwork-2 {
+  width: 80%;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+
+.artwork-3 {
+  width: 140%;
+  margin-left: -250px;
+  margin-top: -150px;
+}
+
+.artwork-4 {
+  width: 97%;
+  margin-top: -20px;
+  margin-left: -60px;
+}
+
+.artwork-5 img {
+  width: 130%;
+  margin-top: -60px;
+  margin-left: -40px;
 }
 
 @media (max-width: 900px) {
@@ -198,11 +282,30 @@ body {
   }
 
   .about-intro {
+    margin-top: -18px;
     margin-bottom: 50px;
     text-align: center;
   }
 
   .cv {
     text-align: left;
+  }
+
+  .work-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .artwork figcaption {
+    text-align: center;
   }
 }
