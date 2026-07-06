@@ -213,8 +213,12 @@ body {
 
   .logo {
     width: 200px;
-    margin: 8px auto 0;
-    display: block;
+    margin: 8px 0 0;
+  }
+
+  .logo-link {
+    display: flex;
+    justify-content: center;
   }
 
   .home-layout {
