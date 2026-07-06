@@ -16,6 +16,10 @@ body {
   margin: 40px 0 0 30px;
 }
 
+.logo-link {
+  display: inline-block;
+}
+
 .home-layout {
   display: flex;
   align-items: flex-start;
@@ -305,7 +309,35 @@ body {
     width: 100%;
   }
 
+  .artwork-1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .artwork-2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .artwork-3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .artwork-4 {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .artwork-5 {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 140px;
+  }
+
   .artwork figcaption {
-    text-align: center;
+    text-align: left;
   }
 }
